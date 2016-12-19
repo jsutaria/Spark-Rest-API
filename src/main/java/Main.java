@@ -8,6 +8,6 @@ import static spark.Spark.*;
 public class Main {
     public static void main(String[] args) {
         BasicConfigurator.configure();
-        get("/hello", (req, res) -> "Testing 123");
+        get("/hello", (req, res) -> new Obj("Hi", 5));
     }
 }
